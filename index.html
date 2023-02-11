@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangman</title>
+    <link rel="icon" type="image/x-icon" href="./43980.png" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -31,8 +32,11 @@
         <div class="keys"></div>
       </div>
       <div class="letter-gussed"></div>
+      <audio id="success" src="./sounds/success.mp3"></audio>
+      <audio id="fail" src="./sounds/fail.mp3"></audio>
     </div>
     <script src="./js/main.js" type="module"></script>
     <script src="./js/popUp.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
   </body>
 </html>
