@@ -91,7 +91,7 @@ let fail = document.getElementById("fail");
 //sound playing using howler
 function playSound(state) {
   let sound = new Howl({
-    src: state ? ["/sounds/success.mp3"] : ["/sounds/fail.mp3"],
+    src: state ? ["./sounds/success.mp3"] : ["./sounds/fail.mp3"],
   });
   sound.play();
 }
