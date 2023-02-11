@@ -1,0 +1,218 @@
+/* start global rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* end global rules */
+/* start game */
+body {
+  font-family: "Roboto", sans-serif;
+}
+.thegame {
+  margin: 50px auto;
+  width: 80vw;
+  border-radius: 5%;
+}
+.thegame .header {
+  padding: 10px;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  color: white;
+}
+.header span {
+  color: #007581;
+}
+.word-from {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .word {
+  color: red;
+}
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+.board .keys {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 5px;
+  margin-top: 8px;
+}
+.board .letter {
+  color: white;
+  background-color: #007581;
+  border-radius: 1px;
+  margin-left: 2px;
+  padding: 25px;
+  width: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board .paint {
+  background-color: #eee;
+  width: 50%;
+  margin-top: 8px;
+}
+.paint .full-paint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.full-paint .stand {
+  width: 60px;
+  background-color: black;
+  height: 5px;
+  position: absolute;
+  bottom: 10px;
+  display: none;
+}
+.full-paint .hang {
+  width: 5px;
+  background-color: black;
+  height: 90%;
+  position: absolute;
+  bottom: 10px;
+  display: none;
+}
+.full-paint .rope {
+  width: 70px;
+  background-color: black;
+  height: 5px;
+  position: absolute;
+  bottom: 88%;
+  left: 50%;
+  display: none;
+}
+.full-paint .rope::before {
+  content: "";
+  width: 5px;
+  background-color: black;
+  height: 30px;
+  position: absolute;
+  top: 100%;
+  left: 88%;
+}
+.full-paint .rope::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 5px dotted black;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 35px;
+  left: 42%;
+}
+
+.head {
+  position: absolute;
+  border: 5px solid black;
+  width: 50px;
+  height: 50px;
+  bottom: 88%;
+  margin-left: 39px;
+  margin-bottom: -95px;
+  left: 50%;
+  border-radius: 50%;
+  display: none;
+}
+
+.body {
+  height: 40%;
+  width: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 49%;
+  margin-left: 62px;
+  margin-bottom: -95px;
+  left: 50%;
+  display: none;
+}
+.hands {
+  position: absolute;
+  background-color: black;
+  width: 5px;
+  height: 50px;
+  transform: rotate(20deg);
+  bottom: 67%;
+  margin-left: 54px;
+  margin-bottom: -108px;
+  left: 50%;
+  display: none;
+}
+.hands::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 5px;
+  height: 100%;
+  transform: rotate(-40deg);
+  bottom: 83%;
+  margin-left: 16px;
+  margin-bottom: -36px;
+  left: 5%;
+}
+.letter-gussed {
+  background-color: #eee;
+  padding: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space {
+  background-color: white;
+  padding: 2vw;
+  text-align: center;
+  margin-left: 10px;
+  border-bottom: 2px solid black;
+}
+.with-space {
+  background-color: transparent;
+  padding: 2vw;
+  text-align: center;
+  margin-left: 10px;
+  border-bottom: 2px solid black;
+}
+/* end game */
+/* start popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-size: 6vw;
+  color: red;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.ok {
+  background-color: #007581;
+  color: white;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+/* end popup */

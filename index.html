@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="thegame">
+      <div class="header">
+        <h1>Hang<span class="man">man</span></h1>
+        <div class="word-from">
+          <span>The Word From :</span>
+          <span class="word"></span>
+        </div>
+      </div>
+      <div class="board">
+        <div class="paint">
+          <div class="full-paint">
+            <div class="stand"></div>
+            <div class="hang"></div>
+            <div class="rope"></div>
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="hands"></div>
+          </div>
+        </div>
+        <div class="keys"></div>
+      </div>
+      <div class="letter-gussed"></div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/popUp.js" type="module"></script>
+  </body>
+</html>
