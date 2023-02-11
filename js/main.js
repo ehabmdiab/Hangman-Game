@@ -103,10 +103,10 @@ keys.addEventListener("click", (e) => {
       paintParts[failedAttempts].style.display = "block";
       failedAttempts++;
       console.log(failedAttempts);
-    }
 
-    if (failedAttempts == 6) {
-      popUp(won);
+      if (failedAttempts == 6) {
+        popUp(won);
+      }
     }
   }
 });
